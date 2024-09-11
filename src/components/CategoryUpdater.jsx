@@ -5,8 +5,8 @@ function CategoryUpdater(){
     const dispatch = useDispatch();
 
     const fetchCategories =() =>{
-        // fetch('https://fakestoreapi.com/products/categories')
-        fetch("http://127.0.0.1:3000/")
+        fetch('https://fakestoreapi.com/products/categories')
+        // fetch("http://127.0.0.1:3000/")
         .then(response=> response.json())
         .then(data =>{ console.log(data);
                         dispatch(catUpdate(data))

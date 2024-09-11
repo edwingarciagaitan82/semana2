@@ -9,10 +9,10 @@ export const categoriesSlice = createSlice({
     initialState,
     reducers : {
         catUpdate : (state, action) =>{
-            // state.list = action.payload
-            return{
-            ...state,
-            list: action.payload }
+            state.list = action.payload
+            // return{
+            // ...state,
+            // list:  action.payload }
         }
     }
 })
